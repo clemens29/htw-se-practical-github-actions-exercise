@@ -24,6 +24,10 @@ class Town:
 
     @residents.setter
     def residents(self, value):
-        if (value < 0):
-            raise ValueError("residents cannot be negative")
-        self.__residents = value
+        # variant: min default value 0
+        self.__residents = 0 if value < 0 else value
+
+        # variant: exception
+        #if value < 0:
+        #    raise ValueError("residents must be equal or greater than 0")
+        #self.__residents = value

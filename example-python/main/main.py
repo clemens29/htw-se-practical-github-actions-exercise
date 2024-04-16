@@ -7,6 +7,7 @@ def main():
     print(t.toString())
     #t.name = ""
     #print(t.toString())
+    #main = 0
 
 if __name__ == "__main__":
     main()

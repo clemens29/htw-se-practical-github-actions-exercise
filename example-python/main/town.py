@@ -24,4 +24,6 @@ class Town:
 
     @residents.setter
     def residents(self, value):
+        if (value < 0):
+            raise ValueError("residents cannot be negative")
         self.__residents = value
